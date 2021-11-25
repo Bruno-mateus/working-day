@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jornada de trabalho</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="img/clock.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titleH">
+        <span>Calcule sua jornada de trabalho</span>
+        <img src="./img/undraw_time_management_re_tk5w.svg" alt="" />
+      </h1>
+    </header>
+
+    <main>
+      <div id="result">
+        <span>00:00</span>
+      </div>
+
+      <div class="input-group">
+        <div>
+          <label>Hora da entrada</label>
+          <div class="input">
+            <input
+              type="number"
+              min="00"
+              id="entry-hour"
+              max="23"
+              value=""
+              placeholder="00"
+              maxlength="2"
+            />
+            <b>:</b>
+            <input
+              type="number"
+              placeholder="00"
+              min="00"
+              max="59"
+              id="entry-minute"
+              value=""
+              maxlength="2"
+            />
+          </div>
+        </div>
+        <div>
+          <label>Saida Intervalo</label>
+          <div class="input">
+            <input
+              type="number"
+              placeholder="00"
+              min="00"
+              max="23"
+              id="break-hour"
+              value=""
+              maxlength="2"
+            />
+            <b>:</b>
+            <input
+              type="number"
+              placeholder="00"
+              min="00"
+              max="59"
+              id="break-minute"
+              value=""
+              maxlength="2"
+            />
+          </div>
+        </div>
+        <div>
+          <label>Volta intervalo</label>
+          <div class="input">
+            <input
+              type="number"
+              placeholder="00"
+              min="00"
+              max="23"
+              id="break-back-hour"
+              value=""
+              maxlength="2"
+            />
+            <b>:</b>
+            <input
+              type="number"
+              min="00"
+              max="59"
+              id="break-back-minute"
+              value=""
+              placeholder="00"
+              maxlength="2"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label>Jornada </label>
+          <div class="input">
+            <input
+              type="number"
+              placeholder="00"
+              min="00"
+              max="23"
+              id="journey-hour"
+              value="07"
+              maxlength="2"
+            />
+            <b>:</b>
+            <input
+              type="number"
+              min="00"
+              max="59"
+              id="journey-minute"
+              value="20"
+              placeholder="00"
+              maxlength="2"
+            />
+          </div>
+        </div>
+
+        <input type="button" id="btn" value="calcular" />
+      </div>
+    </main>
+    <footer>
+      <strong><em>made by Bruno-mateus</em></strong>
+      <div class="avatar">
+        <img src="./img/undraw_developer_activity_re_39tg.svg" alt="i" />
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
